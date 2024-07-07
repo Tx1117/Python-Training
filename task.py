@@ -98,7 +98,7 @@
 
 # number = int(input("Enter Your Number U Want Table: "))
 # for i in range (1, 11):
-#    result = number * 1
+#    result = number * i
 #    print(f"{number} * {i} = {result}")
 
 # Q2. Accept 10 numbers from user and display average of it.
@@ -117,4 +117,193 @@
 # for num in range (100, 301):
 #    if num % 11 == 0:
 #       print(num)
-      
+
+# Python Data Base
+
+# myString = "PythonProgramming"
+
+# print(myString[-11::])
+
+# User = "Python " + "Programming"
+# print(User)
+
+# password = " Hello  U"
+# new = password.strip()
+# print(password)
+# print(new)  
+
+# Upadating string character in python
+# String1 = "Hello, I'm a Geek"
+# print("Initial String: ")
+# print(String1)
+
+# list1 = list(String1)
+# list1[2] = 'p'
+# String2 = "".join(list1)
+# print("\nUpadating character at 2nd Index: ")
+# print(String1)
+
+# String3 = String1[0:2] + 'p' + String1[3:]
+# print(String3)
+
+
+# Formating 
+# age = 18
+# text = f"My name is John, I am  {age}"
+# print(text)
+
+
+# name = "Suraj"
+# age = 18
+# location = 'kapan'
+
+# print(f"Hi, My name is {name} and my age is {age} and My location is {location}")
+
+# Adding list items
+# Change item list
+# thislist = ["apple", "Banana", "Cherrt"]
+# thislist[1] = "BlackCurrent"
+# print(thislist)
+
+# #Using Extend method
+
+# thislist = ["apple", "Banana", "Cherrt"]
+# tropical = ["mango", "pineapple", "papaya"]
+# thislist.extend(tropical)
+# print(thislist)
+
+# # Deleting list Items
+# # Using del keyword
+# thislist = ["apple", "Banana", "Cherrt"]    
+# del thislist[0]
+# print(thislist)
+
+# # Loop through the list
+
+# thislist = ["apple", "banana", "cherry"]
+# for x in thislist:
+#     print(x)
+
+
+# # Using loop with range 
+
+# thislist = ["apple", "banana", "cherrt"]
+# for i in range(len(thislist)):
+#     print(thislist[i])
+
+
+# # Tuple
+# fruitsData = ("apple", "banana", "cherry")
+# print(fruitsData)
+
+
+#Unpacking Tuple
+# fruitsData = ("apple", "banana", "cherry", "strawberry","Rasberry")
+# (green, yellow ,*red) = fruitsData
+
+# print(green)
+# print(yellow)
+# print(red)
+
+# Dictionaries Data Type
+# Adding , Upadate, Removing
+# carDetails = {
+#     "brand":"ford",
+#     "model" : "mustang",
+#     "year" : "2020"
+# }
+# # print(carDetails["brand"])
+# # print(carDetails["model"])
+# # print(carDetails["year"])
+# # print(carDetails.keys())
+# # print(carDetails.values())  
+# carDetails["color"] = "Red"
+# carDetails.update({"mielage": 8})
+# carDetails.pop("mielage")
+# carDetails.popitem()
+# print(carDetails)
+
+# loop through Dictionary
+
+# Student = {
+#     "name" : "John",
+#     "age" : 25,
+#     "grade" : "XII"
+# }
+# for x in Student:
+#  print(x)
+
+# for x in Student.values():
+#  print(x)
+
+# for x, y in Student.items():
+#  print(x, y)
+
+# texasStudent = {
+#     "firstYear" :{
+#         "name" : "John",
+#         "course": "BIT",
+#         "batch":"2020"
+#     },
+#     "secondYear" :{
+#         "course" : "BHM",
+#         "batch" : "2021"
+#     },
+#     "thirdYear" :{
+#         "course" : "BBA",
+#         "batch" : "2022"
+#     }
+# }
+# print(texasStudent["firstYear"])
+
+# Dictionary Items
+# thisdict = {
+#     "brand": "Ford",
+#     "model": "Mustang",
+#     "year" : "1964",
+#     "color": ["black", "white", "red"],
+# }
+# print(thisdict["color"][1])
+
+# Function
+# zip() Function
+# list1 = [1, 2, 3]
+# list2 = ['a','b','c']
+# zipped = zip(list1, list2)
+# print(list(zipped))
+# print(zipped)
+
+# User Defined Function
+
+# with Argument
+
+# def combine (fname, lname):
+#     print(fname + " " + lname)
+
+# # Calling the function
+# combine("john", "Doe")
+
+# With parameter
+# def combine (fname= "john", lname= "Doe"):
+#     print(fname + " " + lname)
+
+# # Calling the function
+# combine()
+
+# Return Statement
+# def square (num):
+#     output =num * num
+#     return output
+
+# def display():
+#     value = square(7) 
+#     print(f"Hello Number is {value}")
+# display()
+
+# Factorial
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n* factorial(n-1)
+print(factorial(5))
